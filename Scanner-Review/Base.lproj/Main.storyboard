@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Efg-0z-YE2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="059-nt-9yC">
+            <objects>
+                <viewController id="Xmp-Ga-JcB" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rj3-Fs-FOc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ddw-8F-jon"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u1R-o3-pPR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfu-IK-w96">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Tasks
+
+Creating a Scanner
++ scannerWithString:
++ localizedScannerWithString:
+– initWithString:
+
+Getting a Scanner’s String
+– string
+
+Configuring a Scanner
+– setScanLocation:
+– scanLocation
+– setCaseSensitive:
+– caseSensitive
+– setCharactersToBeSkipped:
+– charactersToBeSkipped
+– setLocale:
+– locale
+
+Scanning a String
+– scanCharactersFromSet:intoString:
+– scanUpToCharactersFromSet:intoString:
+– scanDecimal:
+– scanDouble:
+– scanFloat:
+– scanHexDouble:
+– scanHexFloat:
+– scanHexInt:
+– scanHexLongLong:
+– scanInteger:
+– scanInt:
+– scanLongLong:
+– scanString:intoString:
+– scanUnsignedLongLong:
+– scanUpToString:intoString:
+– isAtEnd
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" badgeValue="5" systemItem="favorites" id="hH8-dI-AZk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQI-7N-zct" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-40"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JR1-Xe-wVU">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="Efg-0z-YE2" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Nx8-Od-MOO">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Xmp-Ga-JcB" kind="relationship" relationship="viewControllers" id="2xh-Fp-ERv"/>
+                        <segue destination="unw-m8-dxx" kind="relationship" relationship="viewControllers" id="Ddk-EZ-pzI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sy1-xI-cGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="287"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZkV-qx-UpD">
+            <objects>
+                <viewController id="unw-m8-dxx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="glK-jO-btg"/>
+                        <viewControllerLayoutGuide type="bottom" id="XQg-1e-yaL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KUA-Rn-NMC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="DvE-8q-7x1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MsY-19-WkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="613"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
